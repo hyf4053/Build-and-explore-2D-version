@@ -7,7 +7,9 @@ public class SetTileToGrids : MonoBehaviour {
 	Grid2D grid;
 	//public Texture2D tex2D;
 	public GameObject tile;
+	public CellProperitiesList properitiesList;
 	public CellProperities properities;
+	public SpriteCollection collection;
 	Vector3 v3;
 	
 	public Cell lastCell = null;
@@ -34,13 +36,14 @@ public class SetTileToGrids : MonoBehaviour {
 		if(obj!=null){
 			lastCell = grid.cellHighlighted;
 			v3 = grid.CellGetPosition(grid.CellGetIndex(lastCell));
-			
+			grid.CellSetSprite(grid.CellGetIndex(lastCell),Color.white,collection.spriteCollection[0]);
 			//
 			
-			GameObject instance = Instantiate(tile);
-			properities = instance.GetComponent<CellProperities>();
-			properities.SetTileToDataCollection(lastCell);
-			instance.transform.localPosition = v3;
+			////GameObject instance = Instantiate(tile);
+			////properities = instance.GetComponent<CellProperities>();
+			////properities.SetTileToDataCollection(lastCell);
+			////properitiesList.AddNewDataToList(properities);
+			////instance.transform.localPosition = v3;
 			obj = null;
 			//grid.CellSetTexture(grid.CellGetIndex(lastCell),tex2D);
 			//tex2D = null;
@@ -58,7 +61,8 @@ public class SetTileToGrids : MonoBehaviour {
 			
 			GameObject instance = Instantiate(tile);
 			properities = instance.GetComponent<CellProperities>();
-			//properities.SetTileToDataCollection(lastCell);
+			properities.SetTileToDataCollection(lastCell);
+			properitiesList.AddNewDataToList(properities);
 			instance.transform.localPosition = v3;
 			obj = null;
 			//grid.CellSetTexture(grid.CellGetIndex(lastCell),tex2D);

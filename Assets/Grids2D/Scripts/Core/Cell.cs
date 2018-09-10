@@ -22,7 +22,7 @@ namespace Grids2D {
 
 	public partial class Cell: IAdmin {
 		///======Modifiy Part By Lanmaomi======///
-		
+		public CellInfo info = null;
 
 		///======Modifiy End======///
 

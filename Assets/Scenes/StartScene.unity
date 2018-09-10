@@ -1260,3 +1260,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   generateWorld: {fileID: 0}
+  isNewGame: 0

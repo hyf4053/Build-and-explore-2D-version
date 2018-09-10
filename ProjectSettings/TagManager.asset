@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: TerrainWithFeature
+    uniqueID: 240801689
+    locked: 0
+  - name: TerrainWithOutFeature
+    uniqueID: 600065921
+    locked: 0

@@ -7,7 +7,7 @@ Properties {
  
 SubShader {
     Tags {
-      "Queue"="Geometry+2"
+      "Queue"="Geometry+3"
       "RenderType"="Opaque"
   	}
     Blend SrcAlpha OneMinusSrcAlpha

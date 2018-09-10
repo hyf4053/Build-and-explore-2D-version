@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SpriteCollection : MonoBehaviour {
 
-	public List<Sprite> spriteCollection;
+	public List<GameObject> spriteCollection;
+	public List<Sprite> sc;
 	// Use this for initialization
 	void Start () {
 		

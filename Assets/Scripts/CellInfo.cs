@@ -4,7 +4,7 @@ using UnityEngine;
 using Grids2D;
 
 public enum CELLTYPE{
-		GRASS,DIRT,SEA,VALLY,RELIC,TEMPLE,CORRPUTLAND
+		GRASS,DIRT,SEA,VALLY,RELIC,TEMPLE,CORRPUTLAND,SAND
 	}
 	public enum BUILDINGTYPE{
 		Normal,Special

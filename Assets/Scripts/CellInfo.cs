@@ -10,6 +10,7 @@ public enum CELLTYPE{
 		Normal,Special
 	}
 public class CellInfo{
+	public bool canSpawnUnit{get;set;}
 	public bool isVisible{get;set;}
 	public bool isOccupied{get;set;}
 	public CELLTYPE cellType{get;set;}
